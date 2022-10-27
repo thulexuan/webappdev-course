@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    height: 500px;
+}
+
+table {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+#row-header {
+    background-color: pink;
+}
+
+.odd-row {
+    background-color: lightblue;
+}
+
+.even-row {
+    background-color: beige;
+}
+
+.hover:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.background-checked {
+    background-color: yellow;
+}
+
+#delete-btn {
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}

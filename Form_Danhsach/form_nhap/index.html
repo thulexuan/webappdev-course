@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form nhập</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="welcome.php" method="post" class="form-container">
+            <div class="form-group required">
+                <label for="fullname">Họ Tên<span class="special-char">*</span>: </label>
+                <input type="text" id="fullname" name="fullname">
+                <span id="name_error"></span>
+            </div>
+            <div class="form-group required">
+                <label for="address">Địa chỉ<span class="special-char">*</span>: </label>
+                <input type="text" id="address" name="address">
+                <span id="address_error"></span>
+            </div>
+            <div class="form-group required">
+                <label for="gender">Giới tính<span class="special-char">*</span>: </label>
+                <input type="radio" name="gender" id="male" value="male" checked>Nam
+                <input type="radio" name="gender" id="female" value="female">Nữ
+                <span></span>
+            </div>
+            <div class="form-group required">
+                <label for="dob">Ngày sinh<span class="special-char">*</span>: </label>
+                <input type="text" id="dob" name="dob" placeholder="nn/tt/nnnn" maxlength="10">
+                <span id="dob_error"></span>
+            </div>
+            <div class="form-group required">
+                <label for="dob">Email<span class="special-char">*</span>: </label>
+                <input type="email" id="email" name="email">
+                <span id="email_error"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Điện thoại: </label>
+                <input type="text" id="phone" name="phone">
+                <span></span>
+            </div>
+            <div class=" form-group required">
+                <label for="courses">Khoá đăng ký<span class="special-char">*</span>: </label>
+                <input type="checkbox" id="english" name="english">Tiếng Anh
+                <input type="checkbox" id="management" name="management">Quản trị
+                <input type="checkbox" id="cntt" name="cntt">CNTT
+                <span id="courses_error"></span>
+            </div>
+            <div class="form-group required">
+                <label for="username">Tên sử dụng<span class="special-char">*</span>: </label>
+                <input type="text" id="username" name="username">
+                <span id="username_error"></span>
+            </div>
+            <div class="form-group required">
+                <label for="pw">Mật khẩu<span class="special-char">*</span>: </label>
+                <input type="password" id="pw" name="pw">
+                <span id="pw_error"></span>
+            </div>
+            <div class="form-group required">
+                <label for="pw_cf">Gõ lại mật khẩu<span class="special-char">*</span>: </label>
+                <input type="text" id="pw_cf" name="pw_cf">
+                <span id="pw_cf_error"></span>
+            </div>
+            <div class="form-group">
+                <label>Ghi chú: </label>
+                <textarea id="note"></textarea>
+            </div>
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <img class="preview" src="" style="height:200px;">
+            </div>
+            <div class="form-group">
+                <label for="image">Ảnh chân dung: </label>
+                <input type="file" id="image" name="image" accept=".jpg, .png">
+            </div>
+            <div class="btn">
+                <input type="button" id="btn_ok" name="btn_ok" value="Chấp nhận">
+                <input type="button" id="btn_cancel" name="btn_cancel" value="Bỏ qua">
+            </div>
+        </form>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

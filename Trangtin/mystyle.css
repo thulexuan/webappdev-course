@@ -1,0 +1,200 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#container {
+	width: 980px;
+	height: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	background-image: url("/20020217_LeThiXuanThu_Trangtin/images/banner.png");
+	background-repeat: no-repeat;
+	width: 980px;
+	height: 160px;
+}
+
+#leftbar {
+	display: inline;
+	float: left;
+	width: 165px;
+}
+
+#content {
+	display: inline;
+	float: left;
+	width: 605px;
+	padding: 20px;
+}
+
+#rightbar {
+	display: inline;
+	float: left;
+	width: 170px;
+}
+
+#footer {
+	background-color: #9d2224;
+	height: 120px;
+}
+
+
+ul.nav-bar {
+	background-color: #2f8d9a;
+	list-style: none;
+	padding: 5px 10px 5px 10px;
+	position: relative;
+}
+
+ul.nav-bar>li {
+	display: inline;
+
+}
+
+ul.nav-bar>li>a {
+	padding: 5px;
+	cursor: pointer;
+}
+
+ul.nav-bar>li:hover>a {
+	background-color: #cdcdcd;
+}
+
+ul.nav-bar>li>ul {
+	list-style: none;
+	display: none;
+	position: absolute;
+	left: 0;
+	background-color: #cdcdcd;
+	width: 940px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+ul.nav-bar>li:hover>ul {
+	display: block;
+	top: 30px;
+}
+
+ul.nav-bar>li:hover>ul>li {
+	display: inline;
+	padding: 5px;
+	cursor: pointer;
+}
+
+ul.nav-bar>li:hover>ul>li:hover>a {
+	color: red;
+}
+
+ul.left-menu {
+	list-style: none;
+	padding: 0;
+}
+
+ul.left-menu>li {
+	background-image: url("/20020217_LeThiXuanThu_Trangtin/images/bgmenu.gif");
+	background-repeat: no-repeat;
+	height: 45px;
+}
+
+ul.left-menu>li>a {
+	text-decoration: none;
+	position: relative;
+	top: 10px;
+	left: 5px;
+}
+
+ul.left-menu>li>a:hover {
+	color: red;
+}
+
+.image-item {
+	border-style: solid;
+	border-color: red;
+	border-width: 1px;
+}
+
+p {
+	text-align: justify;
+}
+
+#info {
+	display: inline;
+	float: left;
+	width: 660px;
+	color: white;
+	padding: 20px;
+
+}
+
+#website {
+	display: inline;
+	color: #999999;
+	text-align: right;
+	float: left;
+	width: 240px;
+	padding: 20px;
+}
+
+ul#menu {
+	padding: 0;
+	position: fixed;
+	top: 10px;
+	background-color: #2f8d9a;
+	padding: 5px 20px 5px 20px;
+	color: white;
+}
+
+ul#menu>li {
+	display: inline;
+	position: relative;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+ul#menu>li:hover {
+	background: #2f8d9a;
+}
+
+ul#menu>li>ul {
+	display: none;
+}
+
+ul#menu>li:hover>ul {
+	display: block;
+	position: absolute;
+	top: 28px;
+	left: -50px;
+
+}
+
+ul#menu>li>ul>li {
+	position: relative;
+	cursor: pointer;
+}
+
+ul#menu>li>ul>li>ul {
+	display: none;
+}
+
+ul#menu>li:hover>ul>li:hover>ul {
+	display: block;
+	position: absolute;
+	left: 140px;
+	top: 0;
+	list-style: none;
+}
+
+ul#menu>li>ul>li {
+	width: 180px;
+	background: #123cdf;
+}
+
+ul#menu>li>ul>li>ul>li {
+	width: 180px;
+	cursor: pointer;
+	background: #abc123;
+}

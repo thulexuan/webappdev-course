@@ -1,0 +1,47 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    margin: 20px;
+    font-size: 20px;
+}
+
+table,
+th,
+tr,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 5px;
+}
+
+#btn_load {
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+span.arrow:after {
+    content: '\2195';
+
+}
+
+span.desc::after {
+    content: '\2193';
+    background-color: yellow;
+}
+
+span.asc::after {
+    content: '\2191';
+    background-color: yellow;
+}

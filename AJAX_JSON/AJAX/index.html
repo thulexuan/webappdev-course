@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <script>
+        function loadText() {
+            const xmlHttpRequest = new XMLHttpRequest();
+            xmlHttpRequest.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("text").innerHTML = this.responseText;
+                }
+            };
+            xmlHttpRequest.open("GET", "abc.htm", true);
+            xmlHttpRequest.send();
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" name="btn" id="btn" value="Tải abc.htm" onclick="loadText()">
+    <div id="text"></div>
+</body>
+
+</html>

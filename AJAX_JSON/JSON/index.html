@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <style>
+        table,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function loadData() {
+            document.getElementById("btn").disabled = true;
+            const xmlhttpRequest = new XMLHttpRequest();
+            xmlhttpRequest.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    obj = JSON.parse(this.responseText);
+
+                    for (i = 0; i < obj.length; i++) {
+                        var row = document.createElement("tr");
+                        var col1 = document.createElement("td");
+                        var col2 = document.createElement("td");
+                        var col3 = document.createElement("td");
+                        col1.innerHTML = obj[i].name;
+                        col1.style.border = "1px solid black";
+                        col2.innerHTML = obj[i].age;
+                        col2.style.border = "1px solid black";
+                        col3.innerHTML = obj[i].cars.length;
+                        col3.style.border = "1px solid black";
+                        for (j = 0; j < obj[i].cars.length; j++) {
+                            col3.innerHTML += "<br>" + obj[i].cars[j].name + "-" + obj[i].cars[j].models;
+                        }
+                        row.appendChild(col1);
+                        row.appendChild(col2);
+                        row.appendChild(col3);
+
+                        document.getElementById("table").appendChild(row);
+                    }
+                }
+            };
+            xmlhttpRequest.open("GET", "data.html");
+            xmlhttpRequest.send();
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" name="btn" id="btn" value="Tải dữ liệu vào bảng sau" onclick="loadData()">
+    <br>
+    <br>
+    <div id="test"></div>
+
+    <table id="table">
+        <tr>
+            <th>Họ và tên</th>
+            <th>Tuổi</th>
+            <th>Số lượng/Tên mẫu xe</th>
+        </tr>
+    </table>
+
+</body>
+
+</html>

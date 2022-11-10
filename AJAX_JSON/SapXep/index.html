@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Table</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <input type="button" name="btn_load" id="btn_load" class="load" value="Tải dữ liệu vào bảng"
+        onclick="loadData(this)">
+    <span id="sort_info" class="hidden">Bấm vào mũi tên để sắp xếp dữ liệu</span>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th class="sort_col">Mã sản phẩm</th>
+                <th class="sort_col">Tên sản phẩm</th>
+            </tr>
+        </thead>
+    </table>
+    <script src="main.js"></script>
+</body>
+
+</html>

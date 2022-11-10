@@ -1,0 +1,22 @@
+[
+    {
+        "id":"SP001",
+        "name":"Máy giặt"
+    },
+    {
+        "id":"SP002",
+        "name":"Bếp đa năng"
+    },
+    {
+        "id":"SP003",
+        "name":"Lò sưởi"
+    },
+    {
+        "id":"SP004",
+        "name":"Điều hòa nhiệt độ"
+    },
+    {
+        "id":"SP005",
+        "name":"Tủ lạnh"
+    }
+]
